@@ -1,54 +1,14 @@
 package tic.tac.toe.app;
 
-import java.awt.Frame;
-import java.awt.event.WindowEvent;
-import java.awt.event.WindowListener;
+import javax.swing.JFrame;
 
-public class Window extends Frame implements WindowListener {
+class Window extends JFrame {
+
+	private static final long serialVersionUID = 1L;
 
 	public Window() {
-		super("Tic Tac Toe");
-		setSize(1000, 1000);
-		addWindowListener(this);
+		setTitle("Tic Tac Toe");
+		setSize(800, 600); // default size is 0,0
+		setLocation(500, 200); // default is 0,0 (top left corner)
 	}
-
-	@Override
-	public void windowActivated(WindowEvent arg0) {
-
-	}
-
-	@Override
-	public void windowClosed(WindowEvent arg0) {
-		// TODO Auto-generated method stub
-	}
-
-	@Override
-	public void windowClosing(WindowEvent arg0) {
-		System.exit(0);
-	}
-
-	@Override
-	public void windowDeactivated(WindowEvent arg0) {
-		// TODO Auto-generated method stub
-
-	}
-
-	@Override
-	public void windowDeiconified(WindowEvent arg0) {
-		// TODO Auto-generated method stub
-
-	}
-
-	@Override
-	public void windowIconified(WindowEvent arg0) {
-		// TODO Auto-generated method stub
-
-	}
-
-	@Override
-	public void windowOpened(WindowEvent arg0) {
-		// TODO Auto-generated method stub
-
-	}
-
 }

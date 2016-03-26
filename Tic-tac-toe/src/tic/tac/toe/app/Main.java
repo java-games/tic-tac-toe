@@ -1,8 +1,4 @@
-/**
- * 
- */
 package tic.tac.toe.app;
-
 
 /**
  * @author georgi
@@ -11,7 +7,7 @@ package tic.tac.toe.app;
 public class Main {
 
 	public static void main(String[] args) {
-		Window appWindow = new Window();
-		appWindow.setVisible(true);
+	    Window f = new Window();
+	    f.setVisible(true);
 	}
 }
