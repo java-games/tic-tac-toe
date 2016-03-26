@@ -1,5 +1,6 @@
 package tic.tac.toe.app;
 
+
 /**
  * @author georgi
  * 
@@ -7,7 +8,10 @@ package tic.tac.toe.app;
 public class Main {
 
 	public static void main(String[] args) {
-	    Window f = new Window();
-	    f.setVisible(true);
+	    Window window = new Window();
+	    Board board = new Board();
+		board.init(3);
+		board.draw(window);
+	    window.setVisible(true);
 	}
 }

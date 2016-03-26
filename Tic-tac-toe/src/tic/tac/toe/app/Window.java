@@ -1,5 +1,7 @@
 package tic.tac.toe.app;
 
+import java.awt.Color;
+
 import javax.swing.JFrame;
 
 class Window extends JFrame {
@@ -10,5 +12,7 @@ class Window extends JFrame {
 		setTitle("Tic Tac Toe");
 		setSize(800, 600); // default size is 0,0
 		setLocation(500, 200); // default is 0,0 (top left corner)
+		getContentPane().setBackground(Color.DARK_GRAY);
+		getContentPane().setLayout(null);
 	}
 }
